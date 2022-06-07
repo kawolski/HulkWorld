@@ -13,8 +13,9 @@ steps:
 - script: |
     npm install
   displayName: 'npm install'
+
 - task: CopyFiles@2
   inputs:
     SourceFolder: '.'
-    Contents: '*.json''*.js'
+    Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
