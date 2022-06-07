@@ -16,5 +16,5 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '.'
-    Contents: '*.json, *.js'
+    Contents: '*.json *.js'
     TargetFolder: '$(build.artifactstagingdirectory)'
