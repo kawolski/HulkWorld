@@ -23,6 +23,11 @@ steps:
     Contents: '*.js'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
+- task: CopyFiles@2
+  inputs:
+    Contents: '*.yml'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
 # - task: CopyFiles@2
 #   inputs:
 #     targetFolder: '$(Build.ArtifactStagingDirectory)' 
