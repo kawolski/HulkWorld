@@ -36,6 +36,6 @@ steps:
   displayName: 'Publish Artifact: drop'
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
-- script: |
-    npm start
-  displayName: 'Run Site'
+# - script: |
+#     npm start
+#   displayName: 'Run Site'
